@@ -5,7 +5,7 @@ import { setRoutes } from './startup/routes';
 
 
 const app: express.Application = express();
-const port: number = config.port;
+const port: any = config.port;
 
 setRoutes(app);
 
