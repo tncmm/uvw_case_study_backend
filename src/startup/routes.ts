@@ -16,7 +16,7 @@ export const setRoutes = (app: express.Application) => {
 
   app.use(jwt);
   app.use(cors({
-    origin: 'https://uvw-case-study-frontend.onrender.com', // Allow requests from this origin
+    origin: ["http://localhost:3000",'https://uvw-case-study-frontend.onrender.com'], // Allow requests from this origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization',"x-auth-token"], // Specify allowed headers
   }));
